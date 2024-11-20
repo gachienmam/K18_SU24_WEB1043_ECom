@@ -1,0 +1,123 @@
+/* default */
+span{
+    color: #5c5f77;
+}
+
+/* title */
+
+.cat-shop-title{
+    margin: 50px 50px;
+    display: flex;
+}
+
+.cat-shop-title-Right{
+    min-width: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto 0;
+    margin-left: auto;
+    align-content: flex-end;
+}
+.cat-shop-title-Right-RightText{
+    margin-left: 10px;
+}
+
+
+/* cardsshelf */
+.cat-shop-cardsshelf{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.cat-shop-cardsshelf-TitleText{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 16px;
+}
+
+
+/* itemsshelf (variant 1)*/
+.cat-shop-itemsshelf_1{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.cat-shop-cardsshelf:hover{
+    overflow-x: auto;
+}
+
+.cat-shop-itemsshelf_1-item{
+    display: flex;
+    flex: 0 0 auto; 
+    flex-flow: column nowrap;
+    padding: 30px;
+    margin: 10px;
+    height: 440px;
+    width: 253px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
+
+    transition: transform 0.4s;
+}
+
+.cat-shop-itemsshelf_1-item:hover{
+    transform: scale(1.025);
+}
+
+.cat-shop-itemsshelf_1-item-ImageCard{
+    width: 253px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-shop-itemsshelf_1-item-ImageCard img{
+    padding-top: 41px;
+    max-height: 228px;
+}
+
+.cat-shop-itemsshelf_1-item-ItemSpecial{
+    padding-top: 62px;
+}
+
+.cat-shop-itemsshelf_1-item-ItemVariants{
+    
+}
+
+.cat-shop-itemsshelf_1-item-ItemTitle{
+    padding-top: 6px;
+}
+
+.cat-shop-itemsshelf_1-item-EndGroup{
+    justify-self: flex-end;
+    display: flex;
+    margin-top: auto;
+    flex-wrap: nowrap;
+}
+
+.cat-shop-itemsshelf_1-item-ItemPrice{
+    flex: 1;
+    width: 60%;
+}
+
+.cat-shop-itemsshelf_1-item-ItemPrice span{
+    margin-right: auto;
+    margin-top: auto;
+}
+
+
+.cat-shop-itemsshelf_1-item-ButtonAddToCart{
+    flex: 1;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #1e66f5;
+    color: #eff1f5;
+    cursor: pointer;
+}

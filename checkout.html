@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/container.css">
+    
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cat-styles.css">
+    <link rel="stylesheet" href="css/cat-shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.bundle.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>catStore - Checkout</title>
+</head>
+<body>
+    <section id="headerMenu"></section>
+    <div class="header-announcementbanner">
+        <span id="promotionBanner">Giảm giá 10% cho toàn bộ sản phẩm. Áp dụng mã <b>NGUBO10</b> khi thanh toán. Còn {time}</span>
+    </div>
+
+    <div class="shoppingcart">
+        <div class="card">
+            <div class="row">
+                <div class="col-md-8 cart" id="CartContainer">
+
+                </div>
+                <div class="col-md-4 summary">
+                    <div><h5><b>Tổng kết</b></h5></div>
+                    <hr>
+                    <form>
+                        <p>Phương thức vận chuyển</p>
+                        <select id="CartSelectShipMethod" onchange="updateCheckoutInfo();">
+                            <option value="1" class="text-muted">Chuyển bằng BMW - 3 ngày</option>
+                            <option value="2" class="text-muted">Chuyển bằng Mec se dec - 10 giây</option>
+                        </select>
+                        <p style="padding-top: 20px;">Mã khuyến mãi</p>
+                        <input id="CartPromotionCode" onblur="updateCheckoutInfo();" placeholder="Nhập mã (nếu có)">
+                    </form>
+                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                        <div class="col">Tổng tiền sản phẩm</div>
+                        <div class="col text-right CartCheckoutTotalWithoutTax">0 ₫</div>
+                    </div>
+                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                        <div class="col">VAT (5%)</div>
+                        <div class="col text-right CartCheckoutTax">0 ₫</div>
+                    </div>
+                    <div id="CartPromotionMoneyPanel" class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                        <div class="col">Giảm giá khuyến mãi</div>
+                        <div class="col text-right CartCheckoutDiscount">0 ₫</div>
+                    </div>
+                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                        <div class="col">Phí vận chuyển</div>
+                        <div class="col text-right CartCheckoutShipping">0 ₫</div>
+                    </div>
+                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                        <div class="col">Thành tiền</div>
+                        <div class="col text-right CartCheckoutTotal">0 ₫</div>
+                    </div>
+                    <button class="btn" type="reset" onclick="CompletePayment();">Thanh toán</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <section id="footerMenu"></section>
+
+    <script src="embed/header-footer.js"></script>
+    <script src="js/Cart.js"></script>
+    <script src="js/Promotion.js"></script>
+</body>
+</html>

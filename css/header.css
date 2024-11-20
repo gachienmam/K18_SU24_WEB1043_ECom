@@ -1,0 +1,175 @@
+.header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ccd0da;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+/* logo (left) */
+
+.header ul.logo{
+    padding-top: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    justify-self: left;
+    list-style: none;
+}
+
+.header ul.logo li{
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header ul.logo li img.logoimg{
+    height: 40px;
+}
+
+/* middle items */
+
+.header ul.headerItems{
+    place-self: center;
+}
+
+.header ul.headerItems li {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.header ul.headerItems li a{
+    text-decoration: none;
+    color: #4c4f69;
+    padding: 10px;
+}
+
+.header ul.headerItems li a:hover{
+    border-radius: 20px;
+    animation: buttonTransition 250ms forwards;
+}
+
+@keyframes buttonTransition {
+    0% {color: gray; background-color: #dc8a78;}
+    100%  {color: white;background-color: #dd7878;}
+}
+
+/* right nav */
+
+.header ul.right{
+    justify-content: right;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 30px;
+}
+
+.header ul.right i, .header ul.right span{
+    color: #4c4f69;
+}
+
+.header ul.right li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.header ul.right li a{
+    text-decoration: none;
+    color: #4c4f69;
+    min-width: 20px;
+}
+
+.header ul.right li:hover{
+    border-radius: 20px;
+    animation: buttonTransition 250ms forwards;
+}
+
+.header ul.right li a:hover{
+    border-radius: 20px;
+    animation: buttonTransition 250ms forwards;
+}
+
+
+/* right -> burger icon */
+
+
+.header ul.right li.header-BurgerButton {
+    display: none;
+    
+}
+
+/*  
+    Burger menu
+*/
+
+/* right -> burger icon */
+#header-Overlay{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #ccd0da;
+    width: 100%;
+    
+}
+
+#header-Overlay ul.headerItems-Burger{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#header-Overlay ul.headerItems-Burger li{
+    padding: 10px;
+}
+
+#header-Overlay ul.headerItems-Burger li:hover{
+    animation: burger-TextTransition 250ms forwards;
+}
+
+#header-Overlay ul.headerItems-Burger li a{
+    text-decoration: none;
+}
+
+#header-CloseBurger_Event{
+    top: 10px;
+    right: 10px;
+    margin: 10px;
+    height: 40px;
+}
+
+@keyframes burger-TextTransition {
+    0% {color: gray;}
+    100%  {color: black;}
+}
+
+.header-announcementbanner{
+    background-color: #ccd0da;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 575px){
+    .header ul.headerItems{
+        display: none;
+    }
+    .header ul.right li.header-BurgerButton{
+        display: inline-block;
+    }
+}

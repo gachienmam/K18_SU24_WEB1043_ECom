@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cat-styles.css">
+    <link rel="stylesheet" href="css/cat-shop.css">
+    <link rel="stylesheet" href="css/cat-admin.css">
+    <style>
+        input{
+            padding: 15px;
+            font-size: 1.5em;
+        }
+    </style>
+    <title>catStore - Admin Panel</title>
+</head>
+<body>
+    <section id="headerMenu"></section>
+
+    <div class="header-announcementbanner">
+        <span id="promotionBanner">Giảm giá 10% cho toàn bộ sản phẩm. Áp dụng mã <b>NGUBO10</b> khi thanh toán. Còn {time}</span>
+    </div>
+    <div class="content">
+        <div class="cat-admin-title">
+            <div class="cat-admin-title-Left">
+                <!-- <span style="font-size: 48px; font-weight: 600;">Chào mừng đến với </span> -->
+                <span style="font-size: 48px; font-weight: 600; background-image: linear-gradient(#dc8a78, #8839ef); color: transparent; background-clip: text;">
+                    Admin.
+                </span>
+                <span style="font-size: 48px; font-weight: 600;">Nơi tốt nhất để<br>chỉnh sửa thời gian khuyến mãi.</span>
+            </div>
+        </div>
+
+        <div class="cat-admin-cardsshelf">
+            <div class="cat-admin-card">
+                <div class="cat-admin-card_1-item-ImageCard">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="cat-admin-card_1-item-ItemTitle">
+                    <span class="text-item-title-17-600">Chỉnh sửa thời gian khuyến mãi</h2>
+                </div>
+                <div class="cat-admin-card_1-item-ItemContent">
+                    <input type="date" name="cat-admin-PromotionEndDate-Input">
+                </div>
+                <div class="cat-admin-card_1-item-EndGroup">
+                    <div id="Admin_ApplyButton" class="cat-admin-card_1-item-ButtonApply" onclick="setupPromotionTimerToLocal();">Chỉnh sửa</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    <section id="footerMenu"></section>
+
+
+    <script src="embed/header-footer.js"></script>
+    <script src="js/ShoppingCartUpdateHandler.js"></script>
+    <script src="js/Promotion.js"></script>
+</body>
+</html>

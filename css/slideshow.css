@@ -1,0 +1,77 @@
+.cat-slideshow-container, .cat-slideshow-next, .cat-slideshow-prev, .cat-slideshow-slide, .cat-slideshow-slide-numbertext, .cat-slideshow-slide-numbertext, .cat-slideshow-slide-text{
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.cat-slideshow-container {
+  max-width: 1000px;
+  max-height: 200px;
+  position: relative;
+  background-color: white;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* Hide the images by default */
+.cat-slideshow-slide {
+  display: none;
+}
+
+.cat-slideshow-slide img{
+  max-height: 200px;
+  object-fit: contain;
+}
+
+/* Next & previous buttons */
+.cat-slideshow-prev, .cat-slideshow-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.cat-slideshow-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.cat-slideshow-prev:hover, .cat-slideshow-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.cat-slideshow-slide-text {
+  color: #eff1f5;
+  background-color: rgba(0,0,0,0.8);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.cat-slideshow-slide-numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

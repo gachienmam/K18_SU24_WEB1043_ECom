@@ -1,0 +1,53 @@
+/* ban quyen dat game thu cam dung */
+
+/* set default */
+
+h1 h2 h3 h4 h5 h6{
+    color: #4c4f69;
+}
+
+
+/* text */
+.text-title-gradient-test{
+    background-image: linear-gradient(#dc8a78, #8839ef); color: transparent; 
+    color: transparent;
+    background-clip: text;
+    font-size: 28px; 
+    font-weight: 600;
+}
+
+.text-title-normal-28{
+    color: #5c5f77;
+    font-size: 28px;
+}
+
+.text-item-title-17-600{
+    color: #5c5f77;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.text-item-special-12{
+    color: #e64553;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* text-link */
+.text-link{
+    color: #7287fd;
+}
+
+/* image */
+.image-border-rounded{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+h2{
+    color: #4c4f69;
+}
+
+
+/* containers */

@@ -1,0 +1,132 @@
+/* default */
+span{
+    color: #5c5f77;
+}
+
+/* title */
+
+.cat-admin-title{
+    margin: 50px 50px;
+    display: flex;
+    align-self: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-self: center;
+}
+.cat-admin-title-Left{
+    /*min-width: 640px;*/
+}
+.cat-admin-title-Right{
+    min-width: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto 0;
+    margin-left: auto;
+    align-content: flex-end;
+}
+.cat-admin-title-Right-RightText{
+    margin-left: 10px;
+}
+
+
+/* cardsshelf */
+
+.cat-admin-cardsshelf{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.cat-admin-cardsshelf-TitleText{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 16px;
+}
+
+/* itemsshelf (variant 1)*/
+.cat-admin-cardsshelf{
+    display: flex; /* [1] */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap; /* [1] */
+    overflow-x: auto; /* [1] */
+    -webkit-overflow-scrolling: touch; /* [4] */
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* [5] */ 
+}
+
+/*
+.cat-admin-itemsshelf_1::-webkit-scrollbar {
+    display: none;
+}
+*/
+
+.cat-admin-card:hover{
+    overflow-x: auto;
+}
+
+.cat-admin-card{
+    display: flex;
+    flex: 0 0 auto; 
+    flex-flow: column nowrap;
+    padding: 30px;
+    margin: 10px;
+    height: 440px;
+    width: 253px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
+
+    transition: transform 0.4s;
+}
+
+.cat-admin-card_1-item:hover{
+    transform: scale(1.025);
+}
+
+.cat-admin-card_1-item-ImageCard{
+    width: 253px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-admin-card_1-item-ImageCard i{
+    font-size: 128px;
+    max-height: 228px;
+}
+
+.cat-admin-card_1-item-ImageCard img{
+    padding-top: 41px;
+    max-height: 228px;
+}
+
+.cat-admin-card_1-item-ItemTitle{
+    padding-top: 6px;
+}
+
+.cat-admin-card_1-item-ItemContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    flex-wrap: nowrap;
+}
+
+.cat-admin-card_1-item-EndGroup{
+    justify-self: flex-end;
+    display: flex;
+    margin-top: auto;
+    flex-wrap: nowrap;
+}
+
+
+.cat-admin-card_1-item-ButtonApply{
+    flex: 1;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #1e66f5;
+    color: #eff1f5;
+    cursor:pointer;
+}
