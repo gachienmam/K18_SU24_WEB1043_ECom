@@ -1,4 +1,5 @@
-# Simple E-commerce Website
+![Home Page Screenshot](/screenshots/Screenshot_1.jpeg)
+# Responsive Simple E-commerce Website
 Dự án cuối môn học WEB1043
 
 ## Sử dụng
